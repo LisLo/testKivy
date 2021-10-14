@@ -14,7 +14,7 @@ class MyPaintWidget(Widget):
             d = 40.
             Ellipse(pos=(touch.x - d / 2, touch.y - d / 2), size=(d, d))
             touch.ud['line'] = Line(points=(touch.x, touch.y))
-    
+
     def on_touch_move(self, touch):
         touch.ud['line'].points += [touch.x, touch.y]
 
