@@ -36,17 +36,3 @@ class MyPaintApp(App):
 if __name__ == '__main__':
     MyPaintApp().run()
 
-# class Main(GetInput):
-    def execute_workflow(self):
-        print("Addition:")
-        print(MyMethods.addition(self.a, self.b))
-        print("Substraction:")
-        print(MyMethods.substraction(self.a, self.b))
-        print("a hoch b")
-        print(MyMethods.pows(self.a, self.b))
-        print("Square")
-        print(MyMethods.square(self.a))
-
-
-# my_code = Main(__file__)
-# my_code.execute_workflow()
