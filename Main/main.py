@@ -5,7 +5,7 @@ root_path = os.path.split((os.path.dirname(__file__)))[0]
 # set root
 sys.path.append(root_path)
 from Source.Config.get_input import GetInput
-from Source.Services.my_math_methods import MyMethods
+# from Source.Services.my_math_methods import MyMethods
 
 from random import random
 from kivy.app import App
