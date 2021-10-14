@@ -1,3 +1,12 @@
+import os
+import sys
+# find root dir
+root_path = os.path.split((os.path.dirname(__file__)))[0]
+# set root
+sys.path.append(root_path)
+from Source.Config.get_input import GetInput
+from Source.Services.my_math_methods import MyMethods
+
 from random import random
 from kivy.app import App
 from kivy.uix.widget import Widget
@@ -18,7 +27,10 @@ class MyPaintWidget(Widget):
         touch.ud['line'].points += [touch.x, touch.y]
 
 
-class MyPaintApp(App):
+class MyPaintApp(GetInput, App):
+    def __init__(self):
+        super().__init__(__file__)
+
     def build(self):
         parent = Widget()
         self.painter = MyPaintWidget()
