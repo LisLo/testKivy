@@ -39,8 +39,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          path: data
-          ref: data # Branch name
+          path: Main
+          ref: First-Application-with-Kivy # Branch name
 
       - name: Set up Python
         uses: actions/setup-python@v2
