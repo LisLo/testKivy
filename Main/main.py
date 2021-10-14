@@ -1,4 +1,3 @@
-import kivy
 from random import random
 from kivy.app import App
 from kivy.uix.widget import Widget
@@ -35,4 +34,3 @@ class MyPaintApp(App):
 
 if __name__ == '__main__':
     MyPaintApp().run()
-
